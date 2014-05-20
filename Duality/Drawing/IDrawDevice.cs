@@ -53,6 +53,10 @@ namespace Duality.Drawing
 		/// [GET] The size of the surface this drawing device operates on.
 		/// </summary>
 		Vector2 TargetSize { get; }
+		/// <summary>
+		/// [GET / SET] Specified the perspective effect that is applied when rendering the world.
+		/// </summary>
+		PerspectiveMode Perspective { get; }
 
 		Matrix4 MatProjection { get; }
 		bool IsRenderTargetActive { get; }
