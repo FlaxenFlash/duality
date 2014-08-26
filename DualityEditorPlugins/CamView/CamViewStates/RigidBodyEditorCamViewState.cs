@@ -508,8 +508,6 @@ namespace Duality.Editor.Plugins.CamView.CamViewStates
 		protected bool RendererFilter(ICmpRenderer r)
 		{
 			GameObject obj = (r as Component).GameObj;
-			if (obj.RigidBody == null || !(r as Component).Active) return false;
-
 			DesignTimeObjectData data = DesignTimeObjectData.Get(obj);
 			return !data.IsHidden;
 		}
